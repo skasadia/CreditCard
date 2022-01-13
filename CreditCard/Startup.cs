@@ -12,7 +12,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-
+using NSwag.AspNetCore;
 namespace CreditCard
 {
     public class Startup
@@ -40,7 +40,7 @@ namespace CreditCard
             services.AddDbContext<appContext>(
              options => options.UseInMemoryDatabase("carddb"));
             // Register the Swagger services
-
+            services.AddSwaggerDocument();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,6 +49,9 @@ namespace CreditCard
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                // Register the Swagger generator and the Swagger UI middlewares
+                app.UseOpenApi();
+                app.UseSwaggerUi3();
             }
             else
             {
