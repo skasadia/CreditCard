@@ -1,7 +1,7 @@
 # CreditCard
 pre-qualification 
 
-1. Run project and Use Swagger to see what API 
+1. Run project and Use Swagger to see API 
 
 https://localhost:44313/swagger/index.html
 
@@ -16,7 +16,7 @@ Root controller request will show you below response
         "href": "https://localhost:44313/applicantchecks"
     },
     "addApplicantChecks": {
-        "href": "https://localhost:44313/applicantchecks/addapplicant"
+        "href": "https://localhost:44313/applicantchecks/addapplicant"     //From body Jason parm
     },
     "search": {
         "href": "https://localhost:44313/searches"
