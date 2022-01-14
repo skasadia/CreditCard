@@ -26,9 +26,9 @@ Root controller request will show you below response
 
 3. Project Uses In memory database 
 4. Data has been seeded for intial testing 
-5. API alllows user to capture applicant details and provide response with appropriate with suitability
+5. API alllows user to capture applicant details and provide response with appropriate card with suitability message
 6. at the time of when applicant details is captured and marketplace search is peformed , search entry is in logged in database 
-7. Api allows you to see who is used tool 
+7. Api allows you to see who used this tool 
 
 ==To D0=
 1. improve code implementation with try and catch , badrequest message 
